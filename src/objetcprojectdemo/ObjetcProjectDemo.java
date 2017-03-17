@@ -15,20 +15,20 @@ public class ObjetcProjectDemo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Staff staff1 = new Staff("-Peter");
-        staff1.setHoursWorked(160);
-        int pay = staff1.calculatePay(1000,400);
+        Empleado staff1 = new Empleado("-Peter");
+        staff1.setHorasTrabajadas(160);
+        int pay = staff1.calcularPago(1000,400);
         System.out.println("pay= " + pay);
 
-        Staff staff2 = new Staff("-Jane","Lee");
-        staff2.setHoursWorked(160);
-        pay=staff2.calculatePay();
+        Empleado staff2 = new Empleado("-Jane","Lee");
+        staff2.setHorasTrabajadas(160);
+        pay=staff2.calcularPago();
         System.out.println("Pay = "+ pay);
         
         System.out.println("\n\nUpdating Jane's hours worked to -10");
-        staff2.setHoursWorked(-10);
-        System.out.println("\nHours Worked = "+ staff2.getHoursWorked());
-        pay = staff2.calculatePay();
+        staff2.setHorasTrabajadas(-10);
+        System.out.println("\nHours Worked = "+ staff2.getHorasTrabajadas());
+        pay = staff2.calcularPago();
         System.out.println("Pay =" +pay);
         
         
