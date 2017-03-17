@@ -41,11 +41,11 @@ public class Staff {
      * si además tiene un bonus y una parte fija de dinero.
      * @param bonus int el dinero extra de bonus que gana ese mes.
      * @param allowance int el fijo que le corresponde al trabajador.
-     * @return 
+     * @return int la paga que le corresponde.
      */
     public int calculatePay(int bonus, int allowance)
     {
-        printMessage();
+        printMessage(); //Para mostrar el mensaje inicial
         if (hoursWorked>0)
             return hoursWorked * hourlyRate + bonus + allowance;
         else
